@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Print-Shop',
+	'name'=>'YiiAngular',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -21,17 +21,7 @@ return array(
 	),
 
 	'modules'=>array(
-		'admin' => array(
-			'modules'=>array(
-				'catalog',
-				'store',
-				'price',
-				'pages',
-						),
-			),
-		'store',
-		'page',
-		'message',
+		
 		// uncomment the following to enable the Gii tool
 
 		'gii'=>array(
@@ -118,14 +108,4 @@ return array(
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
-	'params'=>array(
-		// this is used in contact page
-		'adminEmail'=>'office@print-shop.com.ua',
-		'host' => 'mail.ukraine.com.ua',
-		'username' => 'office@print-shop.com.ua',
-		'password' => '1a2b3c4d',
-		'port' => '465',
-		'encryption'=>'ssl',
-		'smtpauth' => true,
-	),
 );
